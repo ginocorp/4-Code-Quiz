@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz | Test Your Knowledge</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+  <main>
+    <div class="timer">
+      <h2 id="count">90</h2>
+    </div>
+    <h1>Welcome to the Coding Quiz</h1>
+    <h3>Please enter your name and click "Begin Quiz"</h3>
+    <h5>A 90 second timer will start after you click "Begin Quiz". <br> For every wrong answer 75 seconds will be deducted from the timer. <br> Your score is represented by how much time is left at the end of the quiz. </h5>
+      <section id="start-quiz">
+        <div class="form-group">
+          <label for="exampleInputName">Name</label>
+          <input type="name" class="form-control" id="exampleInputName">
+        </div>
+        <br>
+        <button type="submit" id="start-btn" class="start-btn btn">Start Quiz</button>
+      </section>
+
+      <section id="quiz-questions hide">
+        <div class="question-box  q-1">
+          <p>1. Commonly used data types DO NOT include:</p>
+          <!-- answer: alerts  -->
+          <ul class="answers-group"> 
+            <li><button type="submit" class="btn wrong-answer">a. strings</button></li>
+            <li><button type="submit" class="btn wrong-answer">b. booleans</button></li>
+            <li><button type="submit" class="btn correct-answer">c. alerts</button></li>
+            <li><button type="submit" class="btn wrong-answer">d. numbers</button></li>
+          </ul>
+        </div>
+
+        <div class="question-box q-2">
+          <p>2. The condition in an if/else statement is enclosed within ____.</p>
+          <!-- answer: parentheses  -->
+          <ul> 
+            <li><button type="submit" class="btn correct-answer">a. parentheses</button></li>
+            <li><button type="submit" class="btn wrong-answer">b. quotes</button></li>
+            <li><button type="submit" class="btn wrong-answer">c. curly brackets</button></li>
+            <li><button type="submit" class="btn wrong-answer">d. square brackets</button></li>
+          </ul>
+        </div>
+
+        <div class="question-box q-3">
+          <p>3. Arrays in JavaScript can be used to store ____.</p>
+          <!-- answer: all of the above -->
+          <ul> 
+            <li><button type="submit" class="btn wrong-answer">a. numbers and strings</button></li>
+            <li><button type="submit" class="btn wrong-answer">b. booleans</button></li>
+            <li><button type="submit" class="btn wrong-answer">c. other arrays</button></li>
+            <li><button type="submit" class="btn correct-answer">d. all of the above</button></li>
+          </ul>
+        </div>
+
+        <div class="question-box q-4">
+          <p>4. String values must be enclosed within ____ when being assigned to variables.</p>
+          <!-- answer: quotes  -->
+          <ul> 
+            <li><button type="submit" class="btn wrong-answer">a. commas</button></li>
+            <li><button type="submit" class="btn wrong-answer">b. parentheses</button></li>
+            <li><button type="submit" class="btn correct-answer">c. quotes</button></li>
+            <li><button type="submit" class="btn wrong-answer">d. curly brackets</button></li>
+          </ul>
+        </div>
+
+        <div class="question-box q-5">
+          <p>5. A very useful tool used during development and debugging for printing content to the debugger is: </p>
+          <!-- answer: console.log  -->
+          <ul> 
+            <li><button type="submit" class="btn wrong-answer">a. Javascript</button></li>
+            <li><button type="submit" class="btn wrong-answer">b. terminal/bash</button></li>
+            <li><button type="submit" class="btn correct-answer">c. console.log</button></li>
+            <li><button type="submit" class="btn wrong-answer">d. for loops</button></li>
+          </ul>
+        </div>
+      </section>
+    <h1>High Scores</h1>
+      <section id="quiz-results">
+
+      </section>
+  </main>
+  <script src="assets/script.js"></script>
+</body>
+
+</html>
